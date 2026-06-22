@@ -74,9 +74,8 @@ function Login() {
           </span>{" "}
         </h6>
         <p className="text-sm">
-          kjlfvnoefkmvowsmciod
           This page is protected by Google reCAPTCHA to ensure you're not a bot.{" "}
-          <span className="text-blue-500 underline">login...1111</span>
+          <span className="text-blue-500 underline">login...</span>
         </p>
       </form>
     </div>

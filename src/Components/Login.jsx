@@ -75,7 +75,7 @@ function Login() {
         </h6>
         <p className="text-sm">
           This page is protected by Google reCAPTCHA to ensure you're not a bot.{" "}
-          <span className="text-blue-500 underline">Version 1</span>
+          <span className="text-blue-500 underline">Version 1.0</span>
         </p>
       </form>
     </div>

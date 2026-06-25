@@ -3,8 +3,8 @@ import Config from '../Config.js/configImages'
 
 const Header = () => {
   return (
-    <div className='absolute px-8 py-2 z-10 bg-gradient-to-b from-black/100  w-full'>
-        <img src={Config.netflixLogo} alt="Netflix Logo" className="w-48 h-15" />
+    <div className='absolute z-20 w-full bg-gradient-to-b from-black px-4 py-3 sm:px-8'>
+        <img src={Config.netflixLogo} alt="Netflix Logo" className="h-auto w-28 sm:w-40 md:w-48" />
     </div>
   )
 }

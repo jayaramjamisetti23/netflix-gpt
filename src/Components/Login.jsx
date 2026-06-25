@@ -38,7 +38,7 @@ function Login() {
         className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col justify-center px-6 py-28 text-white sm:px-8 lg:py-36"
       >
         <div className="rounded-lg bg-black/80 p-6 shadow-2xl sm:p-10 md:p-12">
-          <h1 className="my-4 text-2xl font-bold sm:text-3xl">
+          <h1 className="my-4 w-full text-center text-2xl font-bold sm:text-3xl">
             {!isSignIn ? "Sign Up" : "Sign in"}
           </h1>
           <h6 className="min-h-5 text-sm text-red-600 sm:text-base">
@@ -71,7 +71,7 @@ function Login() {
             {!isSignIn ? "Sign Up" : "Sign in"}
           </button>
           <h6
-            className="my-8 text-base sm:my-10 sm:text-lg"
+            className="my-8 w-full text-center text-base sm:my-10 sm:text-md"
             onClick={toogleSignInForm}
           >
             {" "}
@@ -80,9 +80,9 @@ function Login() {
               {!isSignIn ? "Sign in" : "Sign Up"}
             </span>{" "}
           </h6>
-          <p className="text-xs leading-5 sm:text-sm">
+          <p className="text-xs w-full text-center leading-5 sm:text-sm">
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <span className="text-blue-500 underline">Version 2.0</span>
+            bot. <span className="text-blue-500 underline">Version 2.1</span>
           </p>
         </div>
       </form>

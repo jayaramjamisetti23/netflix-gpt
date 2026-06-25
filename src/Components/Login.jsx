@@ -82,7 +82,7 @@ function Login() {
           </h6>
           <p className="text-xs w-full text-center leading-5 sm:text-sm">
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <span className="text-blue-500 underline">Version 3.0</span>
+            bot. <span className="text-blue-500 underline">Version 3.1</span>
           </p>
         </div>
       </form>

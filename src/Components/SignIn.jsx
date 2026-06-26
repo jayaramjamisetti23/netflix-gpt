@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { checkValidation } from "../Config.js/Validate";
 
-function SignIn({ toogleSignInForm }) {
+function SignIn({ setActiveForm }) {
   const [messasge, setMessasge] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
@@ -36,6 +36,14 @@ function SignIn({ toogleSignInForm }) {
         placeholder="Password"
         className="my-2 w-full rounded bg-gray-700 p-2 text-sm outline-none focus:ring-2 focus:ring-white/60 sm:my-3 sm:p-3 sm:text-base"
       />
+      <h6 className="mt-2 mb-3 w-full text-center text-xs sm:text-sm">
+        <span 
+          className="cursor-pointer text-gray-400 hover:underline" 
+          onClick={() => setActiveForm("forgot")}
+        >
+          Forgot password?
+        </span>
+      </h6>
       <button
         type="submit"
         onClick={() => submit()}
@@ -45,11 +53,13 @@ function SignIn({ toogleSignInForm }) {
       </button>
       <h6
         className="my-4 w-full text-center text-base sm:my-6 sm:text-md"
-        onClick={toogleSignInForm}
       >
         {" "}
         New to Netflix?{" "}
-        <span className="cursor-pointer font-bold">
+        <span 
+          className="cursor-pointer font-bold hover:underline"
+          onClick={() => setActiveForm("signup")}
+        >
           Sign Up
         </span>{" "}
       </h6>

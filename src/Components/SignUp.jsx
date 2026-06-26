@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { checkValidation } from "../Config.js/Validate";
 
-function SignUp({ toogleSignInForm }) {
+function SignUp({ setActiveForm }) {
   const [messasge, setMessasge] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
@@ -50,11 +50,13 @@ function SignUp({ toogleSignInForm }) {
       </button>
       <h6
         className="my-4 w-full text-center text-base sm:my-6 sm:text-md"
-        onClick={toogleSignInForm}
       >
         {" "}
-        New to Netflix?{" "}
-        <span className="cursor-pointer font-bold">
+        Already registered?{" "}
+        <span 
+          className="cursor-pointer font-bold hover:underline"
+          onClick={() => setActiveForm("signin")}
+        >
           Sign In
         </span>{" "}
       </h6>

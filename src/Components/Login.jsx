@@ -35,7 +35,7 @@ function Login() {
           )}
           <p className="text-xs w-full text-center leading-5 sm:text-sm mt-4">
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <span className="text-blue-500 underline">Version 3.5</span>
+            bot. <span className="text-blue-500 underline">Version 3.6</span>
           </p>
         </div>
       </form>

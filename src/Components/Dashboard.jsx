@@ -1,10 +1,17 @@
 import React from 'react';
 import Header from './Header';
 import Config from '../Config.js/configImages';
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const getStarted = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black text-white">
+    <div className="relative h-screen w-screen overflow-hidden bg-black text-white">
       <Header />
       <div className="absolute inset-0">
         <img
@@ -21,6 +28,13 @@ const Dashboard = () => {
         <p className="mt-4 text-lg text-gray-300 md:mt-6 md:text-2xl">
           Start browsing your favorite shows and movies.
         </p>
+        <button
+          type="submit"
+          onClick={() => getStarted()}
+          className="mt-3 cursor-pointer rounded-md bg-red-700 p-2 text-sm font-semibold text-white hover:bg-red-800 sm:my-4 sm:p-3 sm:text-base"
+        >
+          Get Started
+        </button>
       </div>
     </div>
   );

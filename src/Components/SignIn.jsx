@@ -28,7 +28,7 @@ function SignIn({ setActiveForm }) {
       <h1 className="mb-4 w-full text-center text-2xl font-bold sm:text-3xl">
         Sign in
       </h1>
-      <h6 className="min-h-5 text-sm text-red-600 sm:text-base">
+      <h6 className="min-h-5 text-center text-sm text-red-600 sm:text-base">
         {messasge}
       </h6>
       <input

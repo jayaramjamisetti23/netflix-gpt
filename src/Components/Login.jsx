@@ -27,11 +27,17 @@ function Login() {
         onSubmit={(e) => e.preventDefault()}
         className="relative z-10 mx-auto flex h-full w-full max-w-md flex-col justify-center px-4 sm:px-6"
       >
-        {isSignIn ? (
-          <SignIn toogleSignInForm={toogleSignInForm} />
-        ) : (
-          <SignUp toogleSignInForm={toogleSignInForm} />
-        )}
+        <div className="rounded-lg bg-black/80 p-4 shadow-2xl sm:p-8 md:p-10 w-full">
+          {isSignIn ? (
+            <SignIn toogleSignInForm={toogleSignInForm} />
+          ) : (
+            <SignUp toogleSignInForm={toogleSignInForm} />
+          )}
+          <p className="text-xs w-full text-center leading-5 sm:text-sm mt-4">
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. <span className="text-blue-500 underline">Version 3.5</span>
+          </p>
+        </div>
       </form>
     </div>
   );

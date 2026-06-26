@@ -17,7 +17,7 @@ function SignIn({ toogleSignInForm }) {
   };
 
   return (
-    <div className="rounded-lg bg-black/80 p-4 shadow-2xl sm:p-8 md:p-10 w-full">
+    <div className="w-full">
       <h1 className="mb-4 w-full text-center text-2xl font-bold sm:text-3xl">
         Sign in
       </h1>
@@ -41,7 +41,7 @@ function SignIn({ toogleSignInForm }) {
         onClick={() => submit()}
         className="my-3 w-full cursor-pointer rounded-md bg-red-700 p-2 text-sm font-semibold text-white hover:bg-red-800 sm:my-4 sm:p-3 sm:text-base"
       >
-        Sign in
+        Sign In
       </button>
       <h6
         className="my-4 w-full text-center text-base sm:my-6 sm:text-md"
@@ -53,10 +53,6 @@ function SignIn({ toogleSignInForm }) {
           Sign Up
         </span>{" "}
       </h6>
-      <p className="text-xs w-full text-center leading-5 sm:text-sm">
-        This page is protected by Google reCAPTCHA to ensure you're not a
-        bot. <span className="text-blue-500 underline">Version 3.4</span>
-      </p>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function SignUp({ toogleSignInForm }) {
   };
 
   return (
-    <div className="rounded-lg bg-black/80 p-4 shadow-2xl sm:p-8 md:p-10 w-full">
+    <div className="w-full">
       <h1 className="mb-4 w-full text-center text-2xl font-bold sm:text-3xl">
         Sign Up
       </h1>
@@ -55,13 +55,9 @@ function SignUp({ toogleSignInForm }) {
         {" "}
         New to Netflix?{" "}
         <span className="cursor-pointer font-bold">
-          Sign in
+          Sign In
         </span>{" "}
       </h6>
-      <p className="text-xs w-full text-center leading-5 sm:text-sm">
-        This page is protected by Google reCAPTCHA to ensure you're not a
-        bot. <span className="text-blue-500 underline">Version 3.4</span>
-      </p>
     </div>
   );
 }

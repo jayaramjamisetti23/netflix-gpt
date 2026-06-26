@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import { checkValidation } from "../Config.js/Validate";
+import { useNavigate } from "react-router-dom";
 
 function SignUp({ setActiveForm }) {
   const [messasge, setMessasge] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
+  const navigate = useNavigate();
 
   const submit = () => {
     console.log("email", email);
@@ -14,6 +16,11 @@ function SignUp({ setActiveForm }) {
     );
     console.log(message);
     setMessasge(message);
+
+    // If there is no validation message (meaning validation passed), proceed to dashboard
+    if (!message) {
+      navigate("/dashboard");
+    }
   };
 
   return (

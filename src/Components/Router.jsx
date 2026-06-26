@@ -1,5 +1,6 @@
 import React from 'react'
 import Login from './Login'
+import Dashboard from './Dashboard'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const Router = () => {
@@ -9,7 +10,10 @@ const Router = () => {
       path: '/',
       element: <Login />
     },
-
+    {
+      path: '/dashboard',
+      element: <Dashboard />
+    }
   ])
 
   return (

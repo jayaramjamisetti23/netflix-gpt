@@ -30,7 +30,7 @@ function Login() {
           {activeForm === "forgot" && <ForgotPassword setActiveForm={setActiveForm} />}
           <p className="text-xs w-full text-center leading-5 sm:text-sm mt-4">
             This page is protected by Google reCAPTCHA to ensure you're not a
-            bot. <span className="text-blue-500 underline">Version 3.20</span>
+            bot. <span className="text-blue-500 underline">Version 3.21</span>
           </p>
         </div>
       </form>
